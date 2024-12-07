@@ -1,0 +1,15 @@
+{
+  "name": "ventweet",
+  "version": "0.1.0",
+  "description": "Ventweet - A Better X Experience",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "WinStuff",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "electron": "^33.2.0",
+    "electron-store": "^10.0.0"
+  }
+}

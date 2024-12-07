@@ -1,0 +1,45 @@
+/* Font */
+* {
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif !important;
+    --accent-color: #1DA1F2;
+}
+
+/* I forgot what that was */
+.css-175oi2r.r-18u37iz.r-1w6e6rj.r-3pj75a.r-1777fci.r-1mmae3n {
+    display: none !important;
+}
+
+.css-146c3p1.r-bcqeeo.r-1ttztb7.r-qvutc0.r-37j5jr.r-1gkfh8e.r-56xrmm.r-16dba41.r-13awgt0.r-117bsoe.r-17w48nw {
+    display: none !important;
+}
+
+.css-175oi2r.r-18u37iz.r-1w6e6rj.r-3pj75a {
+    display: none !important;
+}
+
+/* Buttons */
+button {
+    border-radius: 12px !important;
+}
+
+/* Post button */
+a[href="/compose/post"] {
+    border-radius: 12px !important;
+    background-color: var(--accent-color) !important;
+}
+
+.css-1jxf684.r-dnmrzs.r-1udh08x.r-3s2u2q.r-bcqeeo.r-1ttztb7.r-qvutc0.r-poiln3.r-1inkyih.r-rjixqe {
+    color: white !important;
+}
+
+/* Hide unwanted options */
+a[href="/jobs"],
+a[href="/i/verified-orgs-signup"],
+a[aria-label="Premium"] {
+    display: none !important;
+}
+
+/* Hide Promote Button */
+.css-175oi2r.r-sdzlij.r-1phboty.r-rs99b7.r-lrvibr.r-1ceczpf.r-lp5zef.r-3o4zer.r-o7ynqc.r-6416eg.r-1ny4l3l.r-1loqt21 {
+    display: none !important;
+}
