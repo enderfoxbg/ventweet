@@ -4,12 +4,56 @@
   "description": "Ventweet - A Better X Experience",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
   },
   "author": "WinStuff",
   "license": "GPL-3.0-only",
   "dependencies": {
-    "electron": "^33.2.0",
+    "electron-squirrel-startup": "^1.0.1",
     "electron-store": "^10.0.0"
+  },
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.ventweet.x",
+    "productName": "Ventweet",
+    "artifactName": "${productName}-${version}.${ext}",
+    "files": [
+      "main.js",
+      "custom/inject.css",
+      "custom/inject.js"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable",
+        "msi"
+      ],
+      "icon": "ventweet.ico"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm"
+      ],
+      "category": "Utility",
+      "maintainer": "WinStuff <justwinstuff@gmail.com>"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "category": "public.app-category.utilities",
+      "icon": "icon.icns"
+    }
   }
 }
